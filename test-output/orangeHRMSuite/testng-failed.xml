@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [orangeHRMSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.orangeHRMProject.Listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="orangeHRMSuite(failed)">
+    <classes>
+      <class name="com.orangeHRMProject.test.Apittest">
+        <methods>
+          <include name="VerifyGetuserAPI"/>
+        </methods>
+      </class> <!-- com.orangeHRMProject.test.Apittest -->
+      <class name="com.orangeHRMProject.test.DummyClass2">
+        <methods>
+          <include name="setUp"/>
+          <include name="Dummy"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.orangeHRMProject.test.DummyClass2 -->
+    </classes>
+  </test> <!-- orangeHRMSuite(failed) -->
+</suite> <!-- Failed suite [orangeHRMSuite] -->
